@@ -15,11 +15,27 @@ const adminprefix = "^";
       let args = message.content.split(" ").slice(1);
       let x = args.join(" ")
         if(message.content.startsWith(adminprefix + 'say')) {
-            message.channel.send('');
+            message.channel.send(''+x);
                 message.delete(999)
         }
         
        
       });
 
+client.on('ready', () => {
+
+	
+
+	client.user.setGame('hi i love u');
+
+	
+
+});
+
+
+
 client.login(process.env.BOT_TOKEN);
+
+
+
+
