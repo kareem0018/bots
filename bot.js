@@ -15,7 +15,7 @@ const adminprefix = "^";
       let args = message.content.split(" ").slice(1);
       let x = args.join(" ")
         if(message.content.startsWith(adminprefix + 'say')) {
-            message.channel.send(''+x);
+            message.channel.send(x);
                 message.delete(999)
         }
         
