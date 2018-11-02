@@ -26,7 +26,7 @@ client.on('ready', () => {
 
 	
 
-        client.user.setGame(setGame[i],`http://www.youtube.com/gg`);	
+        client.user.setGame('hi',`http://www.youtube.com/gg`);	
 
 	
 
