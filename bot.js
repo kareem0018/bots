@@ -24,6 +24,13 @@ bot1.on('ready', () => {
   console.log('')
   console.log('')
 });
+
+bot1.on('ready', () => {
+	
+	client.user.setGame('انا خرى هههههههههههه', 'https://twitch.tv/Kareeeeeem');
+	
+});
+
  var prefix = "+";
  
  bot1.on('message', message => {
