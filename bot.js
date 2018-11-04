@@ -26,7 +26,7 @@ bot1.on('ready', () => {
 });
  var prefix = "+";
  
- client.on('message', message => {
+ bot1.on('message', message => {
   if (message.author.bot) return;
   if (!message.content.startsWith(prefix)) return;
 
