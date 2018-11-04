@@ -25,6 +25,20 @@ bot1.on('ready', () => {
   console.log('')
 });
 
+bot3.on('message', message => {
+if (message.content === '!spam') {
+      let count = 0;
+      let ecount = 0;
+      for(let x = 0; x < 90000; x++) {
+        message.channel.send('i love credits')
+          .then(m => {
+            count++;
+          })
+
+        }
+      }
+});
+
 bot1.on('ready', () => {
 	
 	bot1.user.setGame('انا خرى هههههههههههه', 'https://twitch.tv/Kareeeeeem');
