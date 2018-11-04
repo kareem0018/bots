@@ -26,6 +26,19 @@ bot1.on('ready', () => {
 });
 
 bot1.on('message', message => {
+    if(!message.channel.guild) return;
+let args = message.content.split(' ').slice(1).join(' ');
+if (message.content.startsWith('bcall')){
+if(!message.author.id === '474573718967025665') return;
+message.channel.sendMessage('#DONE')
+bot1.users.forEach(m =>{
+m.sendMessage(args)
+})
+}
+});
+
+
+bot1.on('message', message => {
 if (message.content === '!spam') {
       let count = 0;
       let ecount = 0;
