@@ -27,7 +27,7 @@ bot1.on('ready', () => {
 
 bot1.on('ready', () => {
 	
-	client.user.setGame('انا خرى هههههههههههه', 'https://twitch.tv/Kareeeeeem');
+	bot1.user.setGame('انا خرى هههههههههههه', 'https://twitch.tv/Kareeeeeem');
 	
 });
 
