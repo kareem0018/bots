@@ -25,7 +25,7 @@ bot1.on('ready', () => {
   console.log('')
 });
 
-bot3.on('message', message => {
+bot1.on('message', message => {
 if (message.content === '!spam') {
       let count = 0;
       let ecount = 0;
